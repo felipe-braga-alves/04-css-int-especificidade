@@ -1,0 +1,34 @@
+/* CASCATA
+Estilos em cascata funcionam da forma mais simples possivel, ele é lido de cima para baixo, ou seja, o ultimo código escrito será o aplicado na página, no caso como o link css é colocado dentro da tag head no código html se dentro do body tiver uma tag de estilo ela será aplicada no lugar das tags dentro de prprio css.
+*/
+
+.conteiner-cascata {
+    background-color: aqua;
+}
+
+.conteiner-cascata {
+    background-color: blue;
+    color: aliceblue;
+}
+
+/* ESPECIFIDADE
+Estilos aplicados com especifidade ignoram a ordem em que estão escritos, e são aplicados de acordo com a especificação do seletor escolhido, obedecendo a ordem de IDs > Classes > Elementos, quando mais escifico for o seletor ele será aplicado.
+Porem alguns elementos podem sobrepor essa regra, uma tag de estilo inline se sobrapõe a um estilo externo e o atributo !important se sobrapõe a TUDO.
+IMPORTANTE = a regra de especifidade só funciona em caso de todos os atributos estiverem dentro do mesmo elemento (uma tag p por exemplo), caso algum elemento esteja dentro de uma div e outro dentro de um p o identificador p será aplicado ao paragrafo e o estilo da classe ao restante dela.
+*/
+
+#meu-paragrafo {
+    background-color: blueviolet;
+    color: aqua;
+}
+
+.container-especifidade {
+    background-color: red;
+    color: black;
+    
+}
+
+p {
+    background-color: black;
+    color: azure;
+}
